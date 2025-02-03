@@ -1,8 +1,8 @@
 <?php
-$db_host = 'localhost';
-$db_user = 'root';
-$db_pass = '';
-$db_name = 'weblink_db';
+$db_host = '193.203.184.121';
+$db_user = 'u911550082_webase';
+$db_pass = 'z:qHAizSy4#';
+$db_name = 'u911550082_webase';
 
 $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
