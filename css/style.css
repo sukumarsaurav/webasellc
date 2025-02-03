@@ -17,6 +17,7 @@ body {
     padding-top: 112px;
 }
 
+
 /* Navbar Styles */
 .navbar {
     display: flex;
@@ -31,9 +32,17 @@ body {
     right: 0;
     z-index: 1000;
 }
+.nav-left{
+    display:flex;
+    align-items:center;
+}
+.menu-toggle{
+    display:none;
+}
 
 .logo img {
     height: 40px;
+    margin-left:20px
 }
 
 .nav-links ul {
@@ -47,6 +56,9 @@ body {
     color: var(--text-color);
     font-weight: 600;
     font-size: 0.9rem;
+}
+.sidebar{
+    display:none;
 }
 
 .contact-buttons {
@@ -815,7 +827,6 @@ body {
 
 .tech-stack {
     display: flex;
-    flex-direction: column;
     gap: 1rem;
     align-items: center;
 }
