@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - WeBase LLC</title>
+    <title>Our Services - WeBase LLC</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
     <header>
@@ -39,11 +39,12 @@
             <!-- Update the nav-links section in the header -->
             <div class="nav-links">
                 <ul>
-                    <li >
+                    <li>
                         <a href="services.html">SERVICES</a>
                     </li>
                     <li>
-                        <a href="products.html" >PRODUCTS</a>
+                        <a href="products.html">PRODUCTS</a>
+                     
                     </li>
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
                     <li><a href="blog.html">BLOG</a></li>
@@ -71,101 +72,85 @@
     </div>
     <div class="overlay"></div>
 
-    <!-- Portfolio Hero Section -->
-    <section class="page-hero">
+    <section class="services-hero">
         <div class="container">
-            <h1>Our Portfolio</h1>
-            <p>Discover our successful projects and digital solutions</p>
+            <h1>Our Services</h1>
+            <p>Comprehensive digital solutions for your business</p>
         </div>
     </section>
 
-    <!-- Portfolio Filter -->
-    <section class="portfolio-filter">
+    <section class="service-categories">
         <div class="container">
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Design</button>
-                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
-                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
-                <button class="filter-btn" data-filter="branding">Branding</button>
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">All Services</button>
+                <button class="category-btn" data-category="web">Web Development</button>
+                <button class="category-btn" data-category="mobile">Mobile Apps</button>
+                <button class="category-btn" data-category="digital">Digital Marketing</button>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Grid -->
-    <section class="portfolio-grid">
+    <section class="services-section">
         <div class="container">
-            <div class="portfolio-items">
-                <!-- Web Design Projects -->
-                <div class="portfolio-item web fade-in">
-                    <img src="src/images/portfolio/web1.jpg" alt="Corporate Website">
-                    <div class="portfolio-overlay">
-                        <h3>Corporate Website Redesign</h3>
-                        <p>Modern website redesign for a leading tech company</p>
-                        <a href="#" class="btn-view">View Project</a>
-                    </div>
-                </div>
-
-                <!-- E-commerce Projects -->
-                <div class="portfolio-item ecommerce fade-in">
-                    <img src="src/images/portfolio/ecom1.jpg" alt="E-commerce Platform">
-                    <div class="portfolio-overlay">
-                        <h3>Fashion E-commerce Platform</h3>
-                        <p>Full-scale e-commerce solution with advanced features</p>
-                        <a href="#" class="btn-view">View Project</a>
-                    </div>
-                </div>
-
-                <!-- Mobile App Projects -->
-                <div class="portfolio-item mobile fade-in">
-                    <img src="src/images/portfolio/app1.jpg" alt="Mobile App">
-                    <div class="portfolio-overlay">
-                        <h3>Fitness Tracking App</h3>
-                        <p>iOS and Android app for fitness enthusiasts</p>
-                        <a href="#" class="btn-view">View Project</a>
-                    </div>
-                </div>
-
-                <!-- Add more portfolio items... -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Client Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="client-info">
-                        <img src="src/images/client1.jpg" alt="Client">
-                        <div>
-                            <h4>John Smith</h4>
-                            <p>CEO, Tech Solutions</p>
+            <div class="services-grid">
+                <!-- Web Development Service -->
+                <div class="service-card fade-in" data-category="web">
+                    <img src="src/images/services/web-dev.jpg" alt="Web Development" class="service-image">
+                    <div class="service-content">
+                        <i class="fas fa-code service-icon"></i>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">Custom web solutions tailored to your business needs</p>
+                        <div class="service-features">
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Responsive Design</li>
+                                <li><i class="fas fa-check"></i> E-commerce Solutions</li>
+                                <li><i class="fas fa-check"></i> CMS Development</li>
+                            </ul>
                         </div>
+                        <a href="#" class="service-cta">Learn More</a>
                     </div>
-                    <p class="testimonial-text">"WeBase LLC transformed our online presence with a stunning website that perfectly represents our brand."</p>
                 </div>
-                <!-- Add more testimonials... -->
+
+                <!-- Mobile App Development -->
+                <div class="service-card fade-in" data-category="mobile">
+                    <img src="src/images/services/mobile-dev.jpg" alt="Mobile Development" class="service-image">
+                    <div class="service-content">
+                        <i class="fas fa-mobile-alt service-icon"></i>
+                        <h3 class="service-title">Mobile App Development</h3>
+                        <p class="service-description">Native and cross-platform mobile applications</p>
+                        <div class="service-features">
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> iOS Development</li>
+                                <li><i class="fas fa-check"></i> Android Development</li>
+                                <li><i class="fas fa-check"></i> React Native Apps</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="service-cta">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="service-card fade-in" data-category="digital">
+                    <img src="src/images/services/digital-marketing.jpg" alt="Digital Marketing" class="service-image">
+                    <div class="service-content">
+                        <i class="fas fa-chart-line service-icon"></i>
+                        <h3 class="service-title">Digital Marketing</h3>
+                        <p class="service-description">Comprehensive digital marketing solutions</p>
+                        <div class="service-features">
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> SEO Services</li>
+                                <li><i class="fas fa-check"></i> Social Media Marketing</li>
+                                <li><i class="fas fa-check"></i> Content Marketing</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="service-cta">Learn More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Start Your Project?</h2>
-                <p>Let's create something amazing together</p>
-                <div class="cta-buttons">
-                    <a href="#quote" class="btn-quote">Get Started</a>
-                    <a href="#talk" class="btn-talk">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer (Same as index.html) -->
+    <!-- Footer (same as other pages) -->
     <footer class="footer">
         <div class="container">
           <div class="footer-content">
@@ -219,6 +204,8 @@
         </div>
       </footer>
     <script src="js/main.js"></script>
-    <script src="js/portfolio.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
 </body>
-</html>
+</html> 

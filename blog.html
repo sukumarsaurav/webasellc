@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - WeBase LLC</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -189,31 +190,27 @@
     <section class="blog-hero">
         <div class="container">
             <h1>Our Blog</h1>
-            <p>Insights, tips, and updates from the world of web development.</p>
+            <p>Insights, tips, and updates from the world of web development</p>
+        </div>
+    </section>
+
+    <section class="blog-categories">
+        <div class="container">
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="web-development">Web Development</button>
+                <button class="category-btn" data-category="design">Design</button>
+                <button class="category-btn" data-category="marketing">Marketing</button>
+                <button class="category-btn" data-category="technology">Technology</button>
+            </div>
         </div>
     </section>
 
     <section class="blog-posts">
         <div class="container">
-            <?php
-            require_once 'config.php';
-            $sql = "SELECT * FROM blog ORDER BY created_at DESC";
-            $result = mysqli_query($conn, $sql);
-
-            if (mysqli_num_rows($result) > 0) {
-                while ($row = mysqli_fetch_assoc($result)) {
-                    echo "<div class='blog-post'>";
-                    echo "<h3>" . $row['title'] . "</h3>";
-                    echo "<p>" . $row['content'] . "</p>";
-                    echo "<p><em>By " . $row['author'] . " on " . $row['created_at'] . "</em></p>";
-                    echo "</div>";
-                }
-            } else {
-                echo "<p>No blog posts found.</p>";
-            }
-
-            mysqli_close($conn);
-            ?>
+            <div class="blog-grid">
+                <?php include 'blog.php'; ?>
+            </div>
         </div>
     </section>
     <footer class="footer">
@@ -269,5 +266,6 @@
         </div>
       </footer>
     <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 </html>
