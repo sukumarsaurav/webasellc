@@ -86,16 +86,17 @@ try {
         </nav>
     </header>
 
+    
     <div class="sidebar">
         <button class="sidebar-close">
             <i class="fas fa-times"></i>
         </button>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
     </div>
     <div class="overlay"></div>
@@ -176,16 +177,16 @@ try {
                 </div>
 
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/portfolio">Portfolio</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
-                    </ul>
-                </div>
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="portfolio.html"></a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="/portfolio.html">Portfolio</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
 
                 <div class="footer-column">
                     <h3>Our Services</h3>
