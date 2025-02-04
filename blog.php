@@ -69,7 +69,7 @@ try {
             echo '</div>';
             echo '<h2 class="blog-title">' . htmlspecialchars($row['title']) . '</h2>';
             echo '<p class="blog-excerpt">' . htmlspecialchars(substr($row['content'], 0, 150)) . '...</p>';
-            echo '<a href="blog-post.php?slug=' . htmlspecialchars($row['slug']) . '" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>';
+            echo '<a href="blog-details.php?slug=' . htmlspecialchars($row['slug']) . '" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>';
             echo '</div>';
             echo '</article>';
         }
