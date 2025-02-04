@@ -4,14 +4,25 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Function to load blog posts
     function loadBlogPosts(category = 'all') {
+        // Show loading spinner
+        blogGrid.innerHTML = '<div class="loading-spinner">Loading...</div>';
+        
         fetch('blog.php' + (category !== 'all' ? '?category=' + category : ''))
-            .then(response => response.text())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
             .then(html => {
                 blogGrid.innerHTML = html;
                 // Add fade-in animation to loaded posts
                 const posts = blogGrid.querySelectorAll('.blog-post');
                 posts.forEach(post => {
                     post.classList.add('fade-in');
+                    setTimeout(() => {
+                        post.classList.add('visible');
+                    }, 100);
                 });
             })
             .catch(error => {
@@ -19,9 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 blogGrid.innerHTML = '<div class="error-message">Error loading blog posts. Please try again later.</div>';
             });
     }
-
-    // Load initial blog posts
-    loadBlogPosts();
 
     // Handle category filtering
     categoryButtons.forEach(button => {
@@ -35,18 +43,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Handle fade-in animations
-    const fadeElements = document.querySelectorAll('.fade-in');
-    
+    // Add intersection observer for animation
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
             }
         });
+    }, {
+        threshold: 0.1
     });
 
-    fadeElements.forEach(element => {
-        observer.observe(element);
-    });
+    // Initial load of blog posts
+    loadBlogPosts();
 }); 

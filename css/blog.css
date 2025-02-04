@@ -32,10 +32,18 @@
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .blog-post:hover {
     transform: translateY(-5px);
+}
+
+.blog-post.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .blog-image {
@@ -125,4 +133,21 @@
     .blog-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Add loading spinner styles */
+.loading-spinner {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-color);
+}
+
+.error-message {
+    text-align: center;
+    padding: 2rem;
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin: 1rem 0;
 }
