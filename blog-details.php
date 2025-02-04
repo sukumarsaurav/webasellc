@@ -36,7 +36,69 @@ try {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <?php include 'includes/header.php'; ?>
+<header>
+        <div class="top-navbar">
+            <div class="top-navbar-left">
+                <span>📍 Address: 123 Webase St, Web City, Webland</span>
+                <span>📞 Contact: +91-8586878899</span>
+            </div>
+            <div class="top-navbar-right">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="nav-left">
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/src/images/logo-light.png" alt="WebaseLLC  Logo">
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Update the nav-links section in the header -->
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="services.html">SERVICES</a>
+
+                    </li>
+
+                    <li>
+                        <a href="products.html">PRODUCTS</a>
+                    </li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="contact-buttons">
+
+                <a href="#" class="callback-btn">GET A CALL BACK</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="sidebar">
+        <button class="sidebar-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="overlay"></div>
 
     <?php if (isset($error)): ?>
         <div class="error-container">
@@ -97,8 +159,60 @@ try {
         </article>
     <?php endif; ?>
 
-    <?php include 'includes/footer.php'; ?>
-    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img src="/src/images/logo-dark.png" alt="WebaseLLC Logo" class="footer-logo">
+                    <p>We're one of the nation's leading website development & designing company in India. With over 2
+                        decades of experience, we provide immaculate web development, website designing, mobile app
+                        development services and Digital Marketing worldwide.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/portfolio">Portfolio</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="/services/web-design">Web Design</a></li>
+                        <li><a href="/services/web-development">Web Development</a></li>
+                        <li><a href="/services/mobile-app-development">Mobile App Development</a></li>
+                        <li><a href="/services/ecommerce">E-commerce Solutions</a></li>
+                        <li><a href="/services/digital-marketing">Digital Marketing</a></li>
+                        <li><a href="/services/seo">SEO Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>📍 123 Webase St, Web City, Webland</p>
+                    <p>📞 +91-8586878899</p>
+                    <p>✉️ info@webasellc.com</p>
+                    <a href="/contact" class="cta-button">Get a Free Quote</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> WebaseLLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html> 
