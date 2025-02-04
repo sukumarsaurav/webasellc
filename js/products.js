@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'E-commerce Platform',
             category: 'ecommerce',
             description: 'Complete e-commerce solution for your business',
-            image: 'src/images/ai.png',
+            image: 'src/images/3.png',
             features: ['Multi-vendor support', 'Payment gateway integration', 'Inventory management']
         },
         {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Enterprise CRM',
             category: 'enterprise',
             description: 'Advanced CRM system for large organizations',
-            image: 'src/images/ai.png',
+            image: 'src/images/8.png',
             features: ['Customer tracking', 'Sales analytics', 'Team collaboration']
         },
         {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Project Management Suite',
             category: 'management',
             description: 'Comprehensive project management solution',
-            image: 'src/images/ai.png',
+            image: 'src/images/12.png',
             features: ['Task tracking', 'Team collaboration', 'Resource management']
         },
         {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Online Store Builder',
             category: 'ecommerce',
             description: 'Build your online store in minutes',
-            image: 'src/images/ai.png',
+            image: 'src/images/10.png',
             features: ['Drag-and-drop builder', 'Mobile responsive', 'SEO optimized']
         },
         {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Enterprise Analytics',
             category: 'enterprise',
             description: 'Advanced analytics for enterprise businesses',
-            image: 'src/images/ai.png',
+            image: 'src/images/14.png',
             features: ['Real-time reporting', 'Custom dashboards', 'Data visualization']
         }
     ];
