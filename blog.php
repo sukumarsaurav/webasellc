@@ -36,13 +36,30 @@ try {
             // Debug output (remove in production)
             // echo "<!-- Debug: Processing blog post ID: " . $row['id'] . " -->\n";
             
+            // Add this near the top of your try block for debugging
+            if (isset($_GET['debug'])) {
+                echo "<!-- Debug Information -->\n";
+                echo "<!-- Document Root: " . $_SERVER['DOCUMENT_ROOT'] . " -->\n";
+                echo "<!-- Current Directory: " . getcwd() . " -->\n";
+            }
+
+            // Update the image path checking logic
+            if (!empty($row['image_path']) && file_exists($_SERVER['DOCUMENT_ROOT'] . '/' . ltrim($row['image_path'], '/'))) {
+                $imagePath = $row['image_path'];
+            } else {
+                $imagePath = 'src/images/blog/default-blog.jpg';
+            }
+
+            // Add this inside your while loop for debugging image paths
+            if (isset($_GET['debug'])) {
+                echo "<!-- Image Path: " . $row['image_path'] . " -->\n";
+                echo "<!-- Full Path: " . $_SERVER['DOCUMENT_ROOT'] . '/' . ltrim($row['image_path'], '/') . " -->\n";
+                echo "<!-- File Exists: " . (file_exists($_SERVER['DOCUMENT_ROOT'] . '/' . ltrim($row['image_path'], '/')) ? 'Yes' : 'No') . " -->\n";
+            }
+
             echo '<article class="blog-post" data-category="' . htmlspecialchars($row['category_slug']) . '">';
             echo '<div class="blog-image-container">';
-            if (!empty($row['image_path']) && file_exists($_SERVER['DOCUMENT_ROOT'] . $row['image_path'])) {
-                echo '<img src="' . htmlspecialchars($row['image_path']) . '" alt="' . htmlspecialchars($row['title']) . '" class="blog-image">';
-            } else {
-                echo '<img src="src/images/blog/default-blog.jpg" alt="Default Blog Image" class="blog-image">';
-            }
+            echo '<img src="' . htmlspecialchars($imagePath) . '" alt="' . htmlspecialchars($row['title']) . '" class="blog-image" onerror="this.src=\'src/images/blog/default-blog.jpg\'">';
             echo '</div>';
             echo '<div class="blog-content">';
             echo '<div class="blog-meta">';
