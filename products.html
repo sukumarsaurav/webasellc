@@ -82,59 +82,16 @@
             <div class="category-buttons">
                 <button class="category-btn active" data-category="all">All Products</button>
                 <button class="category-btn" data-category="ecommerce">E-commerce</button>
-                <button class="category-btn" data-category="management">Management</button>
                 <button class="category-btn" data-category="enterprise">Enterprise</button>
+                <button class="category-btn" data-category="management">Management</button>
             </div>
         </div>
     </section>
 
     <section class="products-section">
         <div class="container">
-            <div class="products-grid">
-                <!-- E-commerce Product -->
-                <div class="product-card fade-in" data-category="ecommerce">
-                    <img src="src/images/products/ecommerce-suite.png" alt="E-commerce Suite" class="product-logo">
-                    <h3>E-commerce Suite</h3>
-                    <p>Complete e-commerce solution with advanced features</p>
-                    <div class="product-features">
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check"></i> Multi-vendor support</li>
-                            <li><i class="fas fa-check"></i> Inventory management</li>
-                            <li><i class="fas fa-check"></i> Payment gateway integration</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="product-cta">Learn More</a>
-                </div>
-
-                <!-- Management Product -->
-                <div class="product-card fade-in" data-category="management">
-                    <img src="src/images/products/crm-system.png" alt="CRM System" class="product-logo">
-                    <h3>CRM System</h3>
-                    <p>Comprehensive customer relationship management</p>
-                    <div class="product-features">
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check"></i> Lead management</li>
-                            <li><i class="fas fa-check"></i> Sales tracking</li>
-                            <li><i class="fas fa-check"></i> Customer analytics</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="product-cta">Learn More</a>
-                </div>
-
-                <!-- Enterprise Product -->
-                <div class="product-card fade-in" data-category="enterprise">
-                    <img src="src/images/products/erp-solution.png" alt="ERP Solution" class="product-logo">
-                    <h3>ERP Solution</h3>
-                    <p>Enterprise resource planning for growing businesses</p>
-                    <div class="product-features">
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check"></i> Resource management</li>
-                            <li><i class="fas fa-check"></i> Financial planning</li>
-                            <li><i class="fas fa-check"></i> Business intelligence</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="product-cta">Learn More</a>
-                </div>
+            <div id="productsContainer" class="products-container">
+                <!-- Products will be dynamically loaded here -->
             </div>
         </div>
     </section>
