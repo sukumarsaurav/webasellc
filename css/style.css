@@ -1,6 +1,6 @@
 :root {
     --primary-color: #1e3799;
-    --accent-color: #00ff9d;
+    --accent-color: #1e3799;
     --text-color: #333;
     --white: #ffffff;
 }
@@ -79,7 +79,7 @@ body {
 
 .callback-btn {
     background: var(--accent-color);
-    color: var(--text-color);
+    color: var(--white);
 }
 
 /* Hero Section */
@@ -122,7 +122,7 @@ body {
 
 .quote-btn {
     background: var(--accent-color);
-    color: var(--text-color);
+    color: var(--white);
 }
 
 .portfolio-btn {

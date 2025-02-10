@@ -59,11 +59,7 @@ try {
                         <img src="/src/images/logo-light.png" alt="WebaseLLC  Logo">
                     </a>
                 </div>
-
-            </div>
-
-
-            <!-- Update the nav-links section in the header -->
+                  <!-- Update the nav-links section in the header -->
             <div class="nav-links">
                 <ul>
                     <li>
@@ -79,8 +75,13 @@ try {
                     <li><a href="contact-us.html">CONTACT US</a></li>
                 </ul>
             </div>
-            <div class="contact-buttons">
 
+            </div>
+           
+
+          
+            <div class="contact-buttons">
+                
                 <a href="#" class="callback-btn">GET A CALL BACK</a>
             </div>
         </nav>
