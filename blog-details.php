@@ -72,6 +72,7 @@ try {
                     </li>
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
                     <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="about-us.html">ABOUT US</a></li>
                     <li><a href="contact-us.html">CONTACT US</a></li>
                 </ul>
             </div>
@@ -97,6 +98,7 @@ try {
             <li><a href="services.html">Services</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="blog.html">Blog</a></li>
+            <li><a href="about-us.html">ABOUT US</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
     </div>
