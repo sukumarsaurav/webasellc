@@ -1,8 +1,8 @@
 <?php
 $db_host = '193.203.184.121';
-$db_user = 'u911550082_webase';
-$db_pass = 'z:qHAizSy4#';
-$db_name = 'u911550082_webase';
+$db_user = 'u462549710_admin';
+$db_pass = '1N+FOyto';
+$db_name = 'u462549710_ssinfotechwebu';
 
 $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
