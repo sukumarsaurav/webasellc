@@ -1,6 +1,6 @@
 :root {
     --primary-color: #1e3799;
-    --accent-color: #1e3799;
+    --accent-color: #ffc107;
     --text-color: #333;
     --white: #ffffff;
 }
@@ -19,6 +19,7 @@ body {
 
 
 /* Navbar Styles */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -27,7 +28,7 @@ body {
     background: var(--white);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: fixed;
-    top: 40px;
+    top: 52px;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -1211,11 +1212,12 @@ body {
     }
 }
 .top-navbar {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background-color: var(--white);
+    background-color: var(--primary-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -1224,18 +1226,20 @@ body {
 }
 
 .top-navbar-left {
+    font-size:smaller;
     display: flex;
     gap: 20px;
-    color: var(--text-color);
+    color: var(--white);
 }
 
 .top-navbar-right {
     display: flex;
     gap: 15px;
+    
 }
 
 .social-icon {
-    color: var(--text-color);
+    color: var(--white);
     font-size: 1.2rem;
     text-decoration: none;
 }
