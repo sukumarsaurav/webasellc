@@ -39,8 +39,8 @@ try {
 <header>
         <div class="top-navbar">
             <div class="top-navbar-left">
-                <span>📍 Address: 123 Webase St, Web City, Webland</span>
-                <span>📞 Contact: +91-8586878899</span>
+                <span>📍 Address: 2234 N federal  HWY 1421 Boca Raton Fl 33431</span>
+                <span>📞 Contact: +1-315-465-1248</span>
             </div>
             <div class="top-navbar-right">
                 <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -205,8 +205,8 @@ try {
 
                 <div class="footer-column">
                     <h3>Contact Us</h3>
-                    <p>📍 123 Webase St, Web City, Webland</p>
-                    <p>📞 +91-8586878899</p>
+                    <p>📍 2234 N federal  HWY 1421 Boca Raton Fl 33431</p>
+                    <p>📞 +1-315-465-1248</p>
                     <p>✉️ info@webasellc.com</p>
                     <a href="/contact" class="cta-button">Get a Free Quote</a>
                 </div>
