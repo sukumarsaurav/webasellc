@@ -40,7 +40,7 @@ try {
         <div class="top-navbar">
             <div class="top-navbar-left">
                 <span>📍 Address: 2234 N federal  HWY 1421 Boca Raton Fl 33431</span>
-                <span>📞 Contact: +1-315-465-1248</span>
+                <span>📞 Contact:  +1-786-949-5757</span>
             </div>
             <div class="top-navbar-right">
                 <a href="https://www.facebook.com/profile.php?id=61573127546160" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -82,8 +82,7 @@ try {
 
           
             <div class="contact-buttons">
-                
-                <a href="#" class="callback-btn">GET A CALL BACK</a>
+                <a href="https://wa.me/+15147001262" target="_blank" class="callback-btn">Get Quote</a>
             </div>
         </nav>
     </header>
@@ -205,17 +204,27 @@ try {
                 <div class="footer-column">
                     <h3>Contact Us</h3>
                     <p>📍 2234 N federal  HWY 1421 Boca Raton Fl 33431</p>
-                    <p>📞 +1-315-465-1248</p>
-                    <p>✉️ info@webasellc.com</p>
+                    <p>📞  +1-786-949-5757</p>
+                    <p>✉️ info@ssinfotechweb.com</p>
                     <a href="/contact" class="cta-button">Get a Free Quote</a>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> WebaseLLC. All rights reserved.</p>
+                <p>&copy; <span id="current-year"></span> ssinfotechweb. All rights reserved.</p>
             </div>
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16520059025">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16520059025');
+</script>
 </body>
 </html> 
