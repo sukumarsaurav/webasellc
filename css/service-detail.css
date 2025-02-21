@@ -77,7 +77,7 @@
 
 .cta-section {
     text-align: center;
-    background: #f8f9fa;
+    background:#1e3799;
     padding: 60px;
     border-radius: 10px;
 }
@@ -85,7 +85,7 @@
 .cta-button {
     display: inline-block;
     padding: 15px 30px;
-    background: #1e3799;
+    background: #ffc107;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -148,4 +148,38 @@
     .reasons-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.breadcrumb {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.breadcrumb ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumb li {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: "/";
+    margin: 0 10px;
+    color: #6c757d;
+}
+
+.breadcrumb a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
 } 

@@ -3,25 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design Services - SSInfoTech Web</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/services.css">
-    <link rel="stylesheet" href="../css/service-detail.css">
+    <title>Professional Web Design Services | SSInfoTech Web</title>
+    <meta name="description" content="Transform your online presence with our professional web design services. Custom, responsive, and user-friendly websites that drive results. Get a free consultation today!">
+    <meta name="keywords" content="web design, professional web design, responsive web design, custom website design, UI/UX design, Florida web design">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Professional Web Design Services | SSInfoTech Web">
+    <meta property="og:description" content="Transform your online presence with our professional web design services. Custom, responsive, and user-friendly websites that drive results.">
+    <meta property="og:image" content="https://ssinfotechweb.com/src/images/web-design-og.jpg">
+    <meta property="og:url" content="https://ssinfotechweb.com/services/web-design">
+    <meta property="og:site_name" content="SSInfoTech Web">
+    <meta property="og:type" content="website">
+    <meta name="twitter:site" content="@ssinfotechweb">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ssinfotechweb.com/services/web-design">
+    
+    <!-- Add critical CSS inline -->
+    <style>
+        /* Critical CSS for above-the-fold content */
+        .service-hero {
+            min-height: 400px;
+            background-color: #f5f5f5;
+            padding: 60px 0;
+        }
+        .navbar {
+            position: fixed;
+            width: 100%;
+            background: #fff;
+            z-index: 1000;
+        }
+        /* Add other critical styles */
+    </style>
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="preload" href="../css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../css/services.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../css/service-detail.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/services.css">
+        <link rel="stylesheet" href="../css/service-detail.css">
+    </noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Web Design Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "SSInfoTech Web",
+        "url": "https://ssinfotechweb.com"
+      },
+      "areaServed": "Florida",
+      "description": "Professional web design services for businesses in Florida",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "127"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ssinfotechweb.com/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://ssinfotechweb.com/services"
+        },{
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Web Design",
+            "item": "https://ssinfotechweb.com/services/web-design"
+        }]
+    }
+    </script>
+    <!-- Add resource hints -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="/fonts/your-main-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Preload hero image -->
+    <link rel="preload" href="/src/images/hero-image.webp" as="image">
+    
+    <!-- Enhanced Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16520059025"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        // Enhanced ecommerce tracking
+        gtag('config', 'AW-16520059025', {
+            'page_title': 'Web Design Services',
+            'page_path': '/services/web-design',
+            'custom_map': {
+                'dimension1': 'service_category',
+                'dimension2': 'user_type'
+            }
+        });
+
+        // Track user engagement
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track CTA clicks
+            document.querySelectorAll('.cta-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    gtag('event', 'cta_click', {
+                        'event_category': 'engagement',
+                        'event_label': this.textContent
+                    });
+                });
+            });
+
+            // Track scroll depth
+            let scrollDepthTriggered = new Set();
+            window.addEventListener('scroll', function() {
+                let scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
+                [25, 50, 75, 100].forEach(threshold => {
+                    if (scrollPercent >= threshold && !scrollDepthTriggered.has(threshold)) {
+                        scrollDepthTriggered.add(threshold);
+                        gtag('event', 'scroll_depth', {
+                            'event_category': 'engagement',
+                            'event_label': `${threshold}%`
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <!-- Add after existing meta tags -->
+    <meta name="google-site-verification" content="your-verification-code" />
+    
+    <!-- Add structured data for better search insights -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://ssinfotechweb.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://ssinfotechweb.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <!-- Add after Google Analytics -->
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-XXXXXXXX"></script>
+    
+    <!-- Prevent page flicker -->
+    <style>.async-hide { opacity: 0 !important} </style>
+    <script>
+        (function(a,s,y,n,c,h,i,d,e){
+            s.className+=' '+y;
+            h.start=1*new Date;
+            h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+            (a[n]=a[n]||[]).hide=h;
+            setTimeout(function(){i();h.end=null},c);
+            h.timeout=c;
+        })(window,document.documentElement,'async-hide','dataLayer',4000,{'OPT-XXXXXXXX':true});
+    </script>
+    <!-- Add social profile schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SSInfoTech Web",
+        "url": "https://ssinfotechweb.com",
+        "logo": "https://ssinfotechweb.com/src/images/logo-dark.png",
+        "sameAs": [
+            "https://www.facebook.com/profile.php?id=61573127546160",
+            "https://www.linkedin.com/in/ss-infotech-web-32a192352/",
+            "https://www.instagram.com/ssinfotechweb/?hl=en"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-786-949-5757",
+            "contactType": "customer service"
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Copy header from services.html -->
     <header>
         <div class="top-navbar">
             <div class="top-navbar-left">
-                <span> Address: 2234 N federal  HWY 1421 Boca Raton Fl 33431</span>
+                <span> Address: 2234 N federal HWY 1421 Boca Raton Fl 33431</span>
                 <span>Contact: +1-786-949-5757</span>
             </div>
             <div class="top-navbar-right">
-                <a href="https://www.facebook.com/profile.php?id=61573127546160" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61573127546160" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/ss-infotech-web-32a192352/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/ssinfotechweb/?hl=en" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
         <nav class="navbar">
@@ -30,8 +216,17 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="logo">
-                    <a href="index.html">
-                        <img src="/src/images/logo-light.png" alt="WebaseLLC  Logo">
+                    <a href="/">
+                        <img 
+                            src="/src/images/logo-light.png" 
+                            srcset="/src/images/logo-light-300w.webp 300w,
+                                    /src/images/logo-light-600w.webp 600w"
+                            sizes="(max-width: 600px) 300px, 600px"
+                            alt="SSInfoTech Web Logo" 
+                            loading="lazy" 
+                            width="150" 
+                            height="50"
+                            class="logo-img">
                     </a>
                 </div>
                   <!-- Update the nav-links section in the header -->
@@ -61,99 +256,108 @@
             </div>
         </nav>
     </header>
-    <section class="service-hero">
+    <nav class="breadcrumb">
         <div class="container">
-            <h1>Web Design Services</h1>
-            <p>Create stunning, user-friendly websites that convert visitors into customers</p>
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li>Web Design</li>
+            </ol>
         </div>
-    </section>
-
-    <section class="service-details">
-        <div class="container">
-            <div class="service-overview">
-                <h2>Professional Web Design Services</h2>
-                <p>At SSInfoTech Web, we create beautiful, functional websites that help your business stand out in the digital world. Our web design services combine aesthetic appeal with user-friendly functionality to deliver an exceptional online experience for your visitors.</p>
+    </nav>
+    <main>
+        <section class="service-hero">
+            <div class="container">
+                <h1>Professional Web Design Services</h1>
+                <p>Create stunning, user-friendly websites that drive results</p>
             </div>
+        </section>
 
-            <div class="service-features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Responsive Design</h3>
-                    <p>Websites that look and work perfectly on all devices - from smartphones to desktop computers.</p>
+        <section class="service-details">
+            <div class="container">
+                <div class="service-overview">
+                    <h2>Expert Web Design Solutions</h2>
+                    <p>Transform your online presence with our professional web design services...</p>
                 </div>
-                <div class="feature-card">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>Custom Design</h3>
-                    <p>Unique designs tailored to your brand identity and business goals.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-user-friends"></i>
-                    <h3>User Experience</h3>
-                    <p>Intuitive navigation and layouts that enhance user engagement and conversion rates.</p>
-                </div>
-                <!-- Add more feature cards as needed -->
-            </div>
 
-            <div class="service-process">
-                <h2>Our Design Process</h2>
-                <div class="process-steps">
-                    <div class="step">
-                        <span class="step-number">1</span>
-                        <h3>Discovery</h3>
-                        <p>Understanding your business goals and target audience</p>
-                    </div>
-                    <div class="step">
-                        <span class="step-number">2</span>
-                        <h3>Design</h3>
-                        <p>Creating wireframes and visual designs</p>
-                    </div>
-                    <div class="step">
-                        <span class="step-number">3</span>
-                        <h3>Development</h3>
-                        <p>Building your responsive website</p>
-                    </div>
-                    <div class="step">
-                        <span class="step-number">4</span>
-                        <h3>Launch</h3>
-                        <p>Testing and deploying your website</p>
+                <div class="service-features">
+                    <h2>Our Web Design Services</h2>
+                    <div class="service-features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-palette"></i>
+                            <h3>Custom Design</h3>
+                            <p>Unique designs tailored to your brand identity...</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Responsive Design</h3>
+                            <p>Websites that look and work perfectly on all devices - from smartphones to desktop computers.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-user-friends"></i>
+                            <h3>User Experience</h3>
+                            <p>Intuitive navigation and layouts that enhance user engagement and conversion rates.</p>
+                        </div>
+                        <!-- Add more feature cards as needed -->
                     </div>
                 </div>
-            </div>
 
-            <div class="why-choose-us">
-                <h2>Why Choose Us for Web Design</h2>
-                <div class="reasons-grid">
-                    <div class="reason-card">
-                        <i class="fas fa-pencil-ruler"></i>
-                        <h3>Creative Excellence</h3>
-                        <p>Our designers create unique, visually stunning designs that capture your brand's essence and engage your audience.</p>
-                    </div>
-                    <div class="reason-card">
-                        <i class="fas fa-mobile-screen"></i>
-                        <h3>Responsive Design</h3>
-                        <p>All our designs are fully responsive, ensuring perfect functionality across all devices and screen sizes.</p>
-                    </div>
-                    <div class="reason-card">
-                        <i class="fas fa-gauge-high"></i>
-                        <h3>Performance Focused</h3>
-                        <p>We optimize every design for speed and performance, ensuring fast loading times and smooth user experience.</p>
-                    </div>
-                    <div class="reason-card">
-                        <i class="fas fa-users"></i>
-                        <h3>User-Centric Approach</h3>
-                        <p>Our designs prioritize user experience, making navigation intuitive and engagement natural.</p>
+                <div class="service-process">
+                    <h2>Our Design Process</h2>
+                    <div class="process-steps">
+                        <div class="step">
+                            <h3>Discovery</h3>
+                            <p>Understanding your business goals...</p>
+                        </div>
+                        <div class="step">
+                            <h3>Design</h3>
+                            <p>Creating wireframes and visual designs</p>
+                        </div>
+                        <div class="step">
+                            <h3>Development</h3>
+                            <p>Building your responsive website</p>
+                        </div>
+                        <div class="step">
+                            <h3>Launch</h3>
+                            <p>Testing and deploying your website</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="cta-section">
-                <h2>Ready to Start Your Web Design Project?</h2>
-                <p>Contact us today for a free consultation and quote</p>
-                <a href="../contact-us.html" class="cta-button">Get Started</a>
+                <div class="why-choose-us">
+                    <h2>Why Choose Us for Web Design</h2>
+                    <div class="reasons-grid">
+                        <div class="reason-card">
+                            <h3>Creative Excellence</h3>
+                            <p>Our designers create unique...</p>
+                        </div>
+                        <div class="reason-card">
+                            <i class="fas fa-mobile-screen"></i>
+                            <h3>Responsive Design</h3>
+                            <p>All our designs are fully responsive, ensuring perfect functionality across all devices and screen sizes.</p>
+                        </div>
+                        <div class="reason-card">
+                            <i class="fas fa-gauge-high"></i>
+                            <h3>Performance Focused</h3>
+                            <p>We optimize every design for speed and performance, ensuring fast loading times and smooth user experience.</p>
+                        </div>
+                        <div class="reason-card">
+                            <i class="fas fa-users"></i>
+                            <h3>User-Centric Approach</h3>
+                            <p>Our designs prioritize user experience, making navigation intuitive and engagement natural.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h2>Ready to Start Your Web Design Project?</h2>
+                    <p>Contact us today for a free consultation and quote</p>
+                    <a href="../contact-us.html" class="cta-button">Get Started</a>
+                </div>
             </div>
-        </div>
-    </section>
-  <!-- Copy footer from services.html -->
+        </section>
+    </main>
+    <!-- Copy footer from services.html -->
          <!-- Footer (same as other pages) -->
          <footer class="footer">
             <div class="container">
@@ -162,10 +366,10 @@
                   <img src="/src/images/logo-dark.png" alt="WebaseLLC Logo" class="footer-logo">
                   <p>We are a top website development and design company in Canada & the USA, offering expert web development, mobile app solutions, and digital marketing with over 20 years of experience.</p>
                   <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61573127546160" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/ss-infotech-web-32a192352/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/ssinfotechweb/?hl=en" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                   </div>
                 </div>
                 
@@ -208,14 +412,18 @@
             </div>
           </footer>
        <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16520059025">
-    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16520059025"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'AW-16520059025');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-16520059025', {
+            'send_page_view': false // Defer page view tracking
+        });
+        // Send pageview after page load
+        window.addEventListener('load', () => {
+            gtag('event', 'page_view');
+        });
     </script>
         
         <script src="../js/main.js"></script>

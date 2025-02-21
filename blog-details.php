@@ -34,6 +34,37 @@ try {
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/blog-details.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <?php
+    // Dynamic meta tags based on blog post
+    $metaDescription = substr(strip_tags($post['content']), 0, 160);
+    ?>
+    <meta name="description" content="<?php echo htmlspecialchars($metaDescription); ?>">
+    <meta name="keywords" content="<?php echo htmlspecialchars($post['keywords']); ?>">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="<?php echo htmlspecialchars($post['title']); ?> - SSInfoTech Web Blog">
+    <meta property="og:description" content="<?php echo htmlspecialchars($metaDescription); ?>">
+    <meta property="og:image" content="<?php echo htmlspecialchars($post['featured_image']); ?>">
+    <meta property="og:url" content="<?php echo 'https://ssinfotechweb.com/blog/' . htmlspecialchars($post['slug']); ?>">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<?php echo 'https://ssinfotechweb.com/blog/' . htmlspecialchars($post['slug']); ?>">
+    
+    <!-- Article Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "<?php echo htmlspecialchars($post['title']); ?>",
+        "image": "<?php echo htmlspecialchars($post['featured_image']); ?>",
+        "datePublished": "<?php echo $post['published_date']; ?>",
+        "dateModified": "<?php echo $post['modified_date']; ?>",
+        "author": {
+            "@type": "Organization",
+            "name": "SSInfoTech Web"
+        }
+    }
+    </script>
 </head>
 <body>
 <header>
