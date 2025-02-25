@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Query  - SSInfoTech Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .registration-form {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group input[type="date"],
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #1e3799;
+            outline: none;
+        }
+
+        .services-group {
+            margin: 20px 0;
+        }
+
+        .services-group label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .service-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .service-option input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            background-color: #1e3799;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .error-message {
+            color: #dc3545;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Include your website header here -->
+    <header>
+        <div class="top-navbar">
+            <div class="top-navbar-left">
+                <span>📍 Address: 2234 N federal  HWY 1421 Boca Raton Fl 33431</span>
+                <span>📞 Contact: +1-786-949-5757</span>
+            </div>
+            <div class="top-navbar-right">
+                <a href="https://www.facebook.com/profile.php?id=61573127546160" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/ss-infotech-web-32a192352/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/ssinfotechweb/?hl=en" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="nav-left">
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/src/images/logo-light.png" alt="WebaseLLC  Logo">
+                    </a>
+                </div>
+                  <!-- Update the nav-links section in the header -->
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="services.html">SERVICES</a>
+
+                    </li>
+
+                    <li>
+                        <a href="products.html">PRODUCTS</a>
+                    </li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="about-us.html">ABOUT US</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            </div>
+           
+
+          
+            <div class="contact-buttons">
+                
+                <a href="https://wa.me/+15147001262" target="_blank" class="callback-btn">Get Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="sidebar">
+        <button class="sidebar-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about-us.html">ABOUT US</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="overlay"></div>
+    
+    <main>
+        <div class="container">
+        
+            
+            <form id="registrationForm" class="registration-form" method="POST" action="process-registration.php">
+                <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name (Optional)</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address (Optional)</label>
+                    <input type="text" id="address" name="address">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth (Optional)</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+
+                <div class="form-group">
+                    <label for="occupation">Occupation (Optional)</label>
+                    <input type="text" id="occupation" name="occupation">
+                </div>
+
+                <div class="services-group">
+                    <label>Please Select The Services Required *</label>
+                    <div class="service-option">
+                        <input type="checkbox" id="webDesign" name="services[]" value="Website Designing">
+                        <label for="webDesign">Website Designing</label>
+                    </div>
+                    <div class="service-option">
+                        <input type="checkbox" id="appDev" name="services[]" value="App Development">
+                        <label for="appDev">App Development</label>
+                    </div>
+                    <div class="service-option">
+                        <input type="checkbox" id="googleAds" name="services[]" value="Google Ads">
+                        <label for="googleAds">Google Ads</label>
+                    </div>
+                    <div class="service-option">
+                        <input type="checkbox" id="socialAds" name="services[]" value="Facebook & Instagram Ads">
+                        <label for="socialAds">Facebook & Instagram Ads</label>
+                    </div>
+                    <div class="service-option">
+                        <input type="checkbox" id="seo" name="services[]" value="Google SEO">
+                        <label for="seo">Google SEO</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments (up to 500 words)</label>
+                    <textarea id="comments" name="comments" rows="5" maxlength="5000"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Registration</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Include your website footer here -->
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-column">
+              <img src="/src/images/logo-dark.png" alt="WebaseLLC Logo" class="footer-logo">
+              <p>We are a top website development and design company in Canada & the USA, offering expert web development, mobile app solutions, and digital marketing with over 20 years of experience.</p>
+
+
+
+              <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61573127546160" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/ss-infotech-web-32a192352/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/ssinfotechweb/?hl=en" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            
+            <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="portfolio.html"></a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="/portfolio.html">Portfolio</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3>Our Services</h3>
+              <ul>
+                <li><a href="/services/web-design">Web Design</a></li>
+                <li><a href="/services/web-development">Web Development</a></li>
+                <li><a href="/services/mobile-app-development">Mobile App Development</a></li>
+                <li><a href="/services/ecommerce">E-commerce Solutions</a></li>
+                <li><a href="/services/digital-marketing">Digital Marketing</a></li>
+                <li><a href="/services/seo">SEO Services</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3>Contact Us</h3>
+              <p>📍 2234 N federal  HWY 1421 Boca Raton Fl 33431</p>
+              <p>📞 +1-786-949-5757</p>
+              <p>✉️ info@ssinfotechweb.com</p>
+              <a href="/contact-us.html" class="cta-button">Get a Free Quote</a>
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> SSInfoTechWeb. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    <script src="js/main.js"></script>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Form validation
+            const services = document.querySelectorAll('input[name="services[]"]:checked');
+            if (services.length === 0) {
+                alert('Please select at least one service');
+                return;
+            }
+
+            // Prepare form data
+            const formData = new FormData(this);
+
+            // Send form data
+            fetch('process-registration.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Registration successful! We will contact you soon.');
+                    this.reset();
+                } else {
+                    alert('There was an error processing your registration. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error processing your registration. Please try again.');
+            });
+        });
+    </script>
+</body>
+</html>
