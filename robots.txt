@@ -1,5 +1,11 @@
 User-agent: *
 Allow: /
+
+# Prevent indexing of duplicate URLs
+Disallow: /index.html
+Disallow: /*?*
+
+# Allow sitemap
 Sitemap: https://ssinfotechweb.com/sitemap.xml
 
 # Disallow old URLs

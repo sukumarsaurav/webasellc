@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Main pages -->
+    <!-- Homepage (only canonical version) -->
     <url>
         <loc>https://ssinfotechweb.com/</loc>
-        <changefreq>weekly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     
@@ -27,4 +27,11 @@
         <priority>0.8</priority>
     </url>
     <!-- Add other service URLs -->
+    
+    <!-- Rest of your URLs -->
+    <url>
+        <loc>https://ssinfotechweb.com/about-us</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset> 
