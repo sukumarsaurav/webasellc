@@ -56,7 +56,7 @@ try {
     <meta property="og:url" content="<?php echo 'https://ssinfotechweb.com/blog/' . htmlspecialchars($post['slug']); ?>">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="<?php echo 'https://ssinfotechweb.com/blog/' . htmlspecialchars($post['slug']); ?>">
+    <link rel="canonical" href="https://ssinfotechweb.com/blog/<?php echo htmlspecialchars($post['slug']); ?>" />
     
     <!-- Article Schema Markup -->
     <script type="application/ld+json">

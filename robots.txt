@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
+Sitemap: https://ssinfotechweb.com/sitemap.xml
 
-Sitemap: https://ssinfotechweb.com/sitemap.xml 
+# Disallow old URLs
+Disallow: /products/ 

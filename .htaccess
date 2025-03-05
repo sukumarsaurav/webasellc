@@ -60,4 +60,14 @@ ErrorDocument 500 /500.html
 # Keep alive connections
 <IfModule mod_headers.c>
     Header set Connection keep-alive
-</IfModule> 
+</IfModule>
+
+# Blog redirects
+RewriteRule ^blog/mobile-friendly-website$ /blog-details.php?slug=mobile-friendly-website [L]
+RewriteRule ^blog/website-digital-marketing$ /blog-details.php?slug=website-digital-marketing [L]
+RewriteRule ^blog/website-design-tips$ /blog-details.php?slug=website-design-tips [L]
+RewriteRule ^blog/branding-website-design$ /blog-details.php?slug=branding-website-design [L]
+RewriteRule ^blog/website-design-trust-sales$ /blog-details.php?slug=website-design-trust-sales [L]
+
+# Services redirects
+RewriteRule ^services/digital-marketing$ /services/digital-marketing.html [L] 
