@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WXD26PB4');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Web Design Services | SSInfoTech Web</title>
-    <meta name="description" content="Transform your online presence with our professional web design services. Custom, responsive, and user-friendly websites that drive results. Get a free consultation today!">
-    <meta name="keywords" content="web design, professional web design, responsive web design, custom website design, UI/UX design, Florida web design">
-    
+    <title>Professional Web Design Services - SSInfoTechWeb | Custom Website Design</title>
+    <meta name="description"
+        content="Transform your online presence with professional web design services from SSInfoTechWeb. Our custom website designs are beautiful, responsive, and strategically crafted to convert visitors.">
+    <meta name="keywords"
+        content="web design services, professional web design, custom website design, responsive web design, SSInfoTechWeb design, Florida web design company, UI/UX design, business website design">
+
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Professional Web Design Services | SSInfoTech Web">
-    <meta property="og:description" content="Transform your online presence with our professional web design services. Custom, responsive, and user-friendly websites that drive results.">
+    <meta property="og:title" content="Professional Web Design Services - SSInfoTechWeb">
+    <meta property="og:description"
+        content="Transform your online presence with our professional web design services. Custom, responsive, and user-friendly websites that drive results.">
     <meta property="og:image" content="https://ssinfotechweb.com/src/images/web-design-og.jpg">
     <meta property="og:url" content="https://ssinfotechweb.com/services/web-design">
     <meta property="og:site_name" content="SSInfoTech Web">
     <meta property="og:type" content="website">
     <meta name="twitter:site" content="@ssinfotechweb">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://ssinfotechweb.com/services/web-design">
-    
+
     <!-- Add critical CSS inline -->
     <style>
         /* Critical CSS for above-the-fold content */
@@ -27,15 +41,17 @@
             background-color: #f5f5f5;
             padding: 60px 0;
         }
+
         .navbar {
             position: fixed;
             width: 100%;
             background: #fff;
             z-index: 1000;
         }
+
         /* Add other critical styles */
     </style>
-    
+
     <!-- Defer non-critical CSS -->
     <link rel="preload" href="../css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="../css/services.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -91,20 +107,20 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
-    
+
     <!-- Preload critical fonts -->
     <link rel="preload" href="/fonts/your-main-font.woff2" as="font" type="font/woff2" crossorigin>
-    
+
     <!-- Preload hero image -->
     <link rel="preload" href="/src/images/hero-image.webp" as="image">
-    
+
     <!-- Enhanced Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16520059025"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        
+
         // Enhanced ecommerce tracking
         gtag('config', 'AW-16520059025', {
             'page_title': 'Web Design Services',
@@ -116,10 +132,10 @@
         });
 
         // Track user engagement
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Track CTA clicks
             document.querySelectorAll('.cta-button').forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     gtag('event', 'cta_click', {
                         'event_category': 'engagement',
                         'event_label': this.textContent
@@ -129,7 +145,7 @@
 
             // Track scroll depth
             let scrollDepthTriggered = new Set();
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 let scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
                 [25, 50, 75, 100].forEach(threshold => {
                     if (scrollPercent >= threshold && !scrollDepthTriggered.has(threshold)) {
@@ -145,7 +161,7 @@
     </script>
     <!-- Add after existing meta tags -->
     <meta name="google-site-verification" content="your-verification-code" />
-    
+
     <!-- Add structured data for better search insights -->
     <script type="application/ld+json">
     {
@@ -161,18 +177,22 @@
     </script>
     <!-- Add after Google Analytics -->
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-XXXXXXXX"></script>
-    
+
     <!-- Prevent page flicker -->
-    <style>.async-hide { opacity: 0 !important} </style>
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+    </style>
     <script>
-        (function(a,s,y,n,c,h,i,d,e){
-            s.className+=' '+y;
-            h.start=1*new Date;
-            h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-            (a[n]=a[n]||[]).hide=h;
-            setTimeout(function(){i();h.end=null},c);
-            h.timeout=c;
-        })(window,document.documentElement,'async-hide','dataLayer',4000,{'OPT-XXXXXXXX':true});
+        (function (a, s, y, n, c, h, i, d, e) {
+            s.className += ' ' + y;
+            h.start = 1 * new Date;
+            h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+            (a[n] = a[n] || []).hide = h;
+            setTimeout(function () { i(); h.end = null }, c);
+            h.timeout = c;
+        })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, { 'OPT-XXXXXXXX': true });
     </script>
     <!-- Add social profile schema -->
     <script type="application/ld+json">
@@ -195,8 +215,13 @@
     }
     </script>
 </head>
+
 <body>
     <!-- Copy header from services.html -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXD26PB4" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header>
         <div class="top-navbar">
             <div class="top-navbar-left">
@@ -204,10 +229,13 @@
                 <span>Contact: +1-786-949-5757</span>
             </div>
             <div class="top-navbar-right">
-                <a href="https://www.facebook.com/profile.php?id=61573127546160" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61573127546160" class="social-icon"
+                    aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/ss-infotech-web-32a192352/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/ssinfotechweb/?hl=en" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ss-infotech-web-32a192352/" class="social-icon"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/ssinfotechweb/?hl=en" class="social-icon" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
             </div>
         </div>
         <nav class="navbar">
@@ -217,41 +245,34 @@
                 </button>
                 <div class="logo">
                     <a href="/">
-                        <img 
-                            src="/src/images/logo-light.png" 
-                            srcset="/src/images/logo-light-300w.webp 300w,
-                                    /src/images/logo-light-600w.webp 600w"
-                            sizes="(max-width: 600px) 300px, 600px"
-                            alt="SSInfoTech Web Logo" 
-                            loading="lazy" 
-                            width="150" 
-                            height="50"
-                            class="logo-img">
+                        <img src="/src/images/logo-light.png" srcset="/src/images/logo-light-300w.webp 300w,
+                                    /src/images/logo-light-600w.webp 600w" sizes="(max-width: 600px) 300px, 600px"
+                            alt="SSInfoTech Web Logo" loading="lazy" width="150" height="50" class="logo-img">
                     </a>
                 </div>
-                  <!-- Update the nav-links section in the header -->
-            <div class="nav-links">
-                <ul>
-                    <li>
-                        <a href="services.html">SERVICES</a>
+                <!-- Update the nav-links section in the header -->
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="services.html">SERVICES</a>
 
-                    </li>
+                        </li>
 
-                    <li>
-                        <a href="products.html">PRODUCTS</a>
-                    </li>
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="about-us.html">ABOUT US</a></li>
-                    <li><a href="contact-us.html">CONTACT US</a></li>
-                </ul>
+                        <li>
+                            <a href="products.html">PRODUCTS</a>
+                        </li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="about-us.html">ABOUT US</a></li>
+                        <li><a href="contact-us.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+
             </div>
 
-            </div>
-           
 
-          
-           <div class="contact-buttons">
+
+            <div class="contact-buttons">
                 <a href="https://wa.me/+15147001262" target="_blank" class="callback-btn">Get Quote</a>
             </div>
         </nav>
@@ -268,166 +289,144 @@
     <main>
         <section class="service-hero">
             <div class="container">
-                <h1>Professional Web Design Services</h1>
-                <p>Create stunning, user-friendly websites that drive results</p>
+                <h1>Professional Web Design Services by SSInfoTechWeb</h1>
+                <p>Beautiful, functional websites that elevate your brand and drive conversions</p>
             </div>
         </section>
 
         <section class="service-details">
             <div class="container">
                 <div class="service-overview">
-                    <h2>Expert Web Design Solutions</h2>
-                    <p>Transform your online presence with our professional web design services...</p>
+                    <h2>Custom Web Design Solutions for Your Business</h2>
+                    <p>At SSInfoTechWeb, we create visually stunning, user-friendly websites that perfectly represent
+                        your brand and help you achieve your business goals. Our professional web design services
+                        combine aesthetics with functionality to deliver websites that not only look great but also
+                        convert visitors into customers.</p>
                 </div>
 
                 <div class="service-features">
-                    <h2>Our Web Design Services</h2>
+                    <h2>Our Web Design Services Include</h2>
                     <div class="service-features-grid">
                         <div class="feature-card">
-                            <i class="fas fa-palette"></i>
-                            <h3>Custom Design</h3>
-                            <p>Unique designs tailored to your brand identity...</p>
+                            <i class="fas fa-pencil-ruler"></i>
+                            <h3>Custom Website Design</h3>
+                            <p>Unique, branded web designs tailored specifically to your business needs and target
+                                audience.</p>
                         </div>
                         <div class="feature-card">
                             <i class="fas fa-mobile-alt"></i>
-                            <h3>Responsive Design</h3>
-                            <p>Websites that look and work perfectly on all devices - from smartphones to desktop computers.</p>
+                            <h3>Responsive Web Design</h3>
+                            <p>Websites that look and function perfectly across all devices, from desktops to
+                                smartphones.</p>
                         </div>
                         <div class="feature-card">
-                            <i class="fas fa-user-friends"></i>
-                            <h3>User Experience</h3>
-                            <p>Intuitive navigation and layouts that enhance user engagement and conversion rates.</p>
+                            <i class="fas fa-users"></i>
+                            <h3>User Experience (UX) Design</h3>
+                            <p>Intuitive interfaces and customer journeys that enhance engagement and conversions.</p>
                         </div>
-                        <!-- Add more feature cards as needed -->
-                    </div>
-                </div>
-
-                <div class="service-process">
-                    <h2>Our Design Process</h2>
-                    <div class="process-steps">
-                        <div class="step">
-                            <h3>Discovery</h3>
-                            <p>Understanding your business goals...</p>
-                        </div>
-                        <div class="step">
-                            <h3>Design</h3>
-                            <p>Creating wireframes and visual designs</p>
-                        </div>
-                        <div class="step">
-                            <h3>Development</h3>
-                            <p>Building your responsive website</p>
-                        </div>
-                        <div class="step">
-                            <h3>Launch</h3>
-                            <p>Testing and deploying your website</p>
+                        <div class="feature-card">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h3>E-commerce Web Design</h3>
+                            <p>Online store designs that showcase products effectively and streamline the purchase
+                                process.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="why-choose-us">
-                    <h2>Why Choose Us for Web Design</h2>
+                    <h2>Why Choose SSInfoTechWeb for Professional Web Design</h2>
                     <div class="reasons-grid">
                         <div class="reason-card">
-                            <h3>Creative Excellence</h3>
-                            <p>Our designers create unique...</p>
+                            <i class="fas fa-award"></i>
+                            <h3>Expert Web Design Team</h3>
+                            <p>Our designers combine creativity with technical expertise to deliver outstanding results.
+                            </p>
                         </div>
                         <div class="reason-card">
-                            <i class="fas fa-mobile-screen"></i>
-                            <h3>Responsive Design</h3>
-                            <p>All our designs are fully responsive, ensuring perfect functionality across all devices and screen sizes.</p>
+                            <i class="fas fa-rocket"></i>
+                            <h3>Conversion-Focused Design</h3>
+                            <p>We design with your business goals in mind, creating websites that drive action.</p>
                         </div>
                         <div class="reason-card">
-                            <i class="fas fa-gauge-high"></i>
-                            <h3>Performance Focused</h3>
-                            <p>We optimize every design for speed and performance, ensuring fast loading times and smooth user experience.</p>
-                        </div>
-                        <div class="reason-card">
-                            <i class="fas fa-users"></i>
-                            <h3>User-Centric Approach</h3>
-                            <p>Our designs prioritize user experience, making navigation intuitive and engagement natural.</p>
+                            <i class="fas fa-search"></i>
+                            <h3>SEO-Friendly Web Design</h3>
+                            <p>Our websites are built with clean code and best practices that search engines love.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="cta-section">
-                    <h2>Ready to Start Your Web Design Project?</h2>
-                    <p>Contact us today for a free consultation and quote</p>
-                    <a href="../contact-us.html" class="cta-button">Get Started</a>
+                    <h2>Ready to Transform Your Website?</h2>
+                    <p>Partner with SSInfoTechWeb for professional web design services that elevate your brand and drive
+                        business growth.</p>
+                    <a href="/contact-us.html" class="cta-button">Get Your Free Web Design Consultation</a>
                 </div>
             </div>
         </section>
     </main>
     <!-- Copy footer from services.html -->
-         <!-- Footer (same as other pages) -->
-         <footer class="footer">
-            <div class="container">
-              <div class="footer-content">
+    <!-- Footer (same as other pages) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
                 <div class="footer-column">
-                  <img src="/src/images/logo-dark.png" alt="WebaseLLC Logo" class="footer-logo">
-                  <p>We are a top website development and design company in Canada & the USA, offering expert web development, mobile app solutions, and digital marketing with over 20 years of experience.</p>
-                  <div class="social-icons">
-                    <a href="https://www.facebook.com/profile.php?id=61573127546160" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/ss-infotech-web-32a192352/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/ssinfotechweb/?hl=en" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                  </div>
+                    <img src="/src/images/logo-dark.png" alt="WebaseLLC Logo" class="footer-logo">
+                    <p>We are a top website development and design company in Canada & the USA, offering expert web
+                        development, mobile app solutions, and digital marketing with over 20 years of experience.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61573127546160" class="social-icon"
+                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/ss-infotech-web-32a192352/" class="social-icon"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/ssinfotechweb/?hl=en" class="social-icon"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                
+
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul>
-                      <li><a href="/">Home</a></li>
-                      <li><a href="../portfolio.html"></a></li>
-                      <li><a href="../services.html">Services</a></li>
-                      <li><a href="../portfolio.html">Portfolio</a></li>
-                      <li><a href="../blog.html">Blog</a></li>
-                      <li><a href="../contact-us.html">Contact Us</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="../portfolio.html"></a></li>
+                        <li><a href="../services.html">Services</a></li>
+                        <li><a href="../portfolio.html">Portfolio</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../contact-us.html">Contact Us</a></li>
                     </ul>
-                  </div>
-                
-                <div class="footer-column">
-                  <h3>Our Services</h3>
-                  <ul>
-                    <li><a href="/services/web-design">Web Design</a></li>
-                    <li><a href="/services/web-development">Web Development</a></li>
-                    <li><a href="/services/mobile-app-development">Mobile App Development</a></li>
-                    <li><a href="/services/ecommerce">E-commerce Solutions</a></li>
-                    <li><a href="/services/digital-marketing">Digital Marketing</a></li>
-                    <li><a href="/services/seo">SEO Services</a></li>
-                  </ul>
                 </div>
-                
+
                 <div class="footer-column">
-                  <h3>Contact Us</h3>
-                  <p>�� 2234 N federal  HWY 1421 Boca Raton Fl 33431</p>
-                  <p>📞 +1-786-949-5757</p>
-                  <p>✉️ info@ssinfotechweb.com</p>
-                  <a href="/contact" class="cta-button">Get a Free Quote</a>
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="/services/web-design">Web Design</a></li>
+                        <li><a href="/services/web-development">Web Development</a></li>
+                        <li><a href="/services/mobile-app-development">Mobile App Development</a></li>
+                        <li><a href="/services/ecommerce">E-commerce Solutions</a></li>
+                        <li><a href="/services/digital-marketing">Digital Marketing</a></li>
+                        <li><a href="/services/seo">SEO Services</a></li>
+                    </ul>
                 </div>
-              </div>
-              
-              <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> SSInfoTech Web. All rights reserved.</p>
-              </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>�� 2234 N federal HWY 1421 Boca Raton Fl 33431</p>
+                    <p>📞 +1-786-949-5757</p>
+                    <p>✉️ info@ssinfotechweb.com</p>
+                    <a href="/contact" class="cta-button">Get a Free Quote</a>
+                </div>
             </div>
-          </footer>
-       <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16520059025"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'AW-16520059025', {
-            'send_page_view': false // Defer page view tracking
-        });
-        // Send pageview after page load
-        window.addEventListener('load', () => {
-            gtag('event', 'page_view');
-        });
-    </script>
-        
-        <script src="../js/main.js"></script>
-    
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> SSInfoTech Web. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
     <script src="../js/main.js"></script>
 </body>
-</html> 
+
+</html>
