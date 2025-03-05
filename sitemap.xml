@@ -7,7 +7,7 @@
         <priority>1.0</priority>
     </url>
     
-    <!-- Blog URLs -->
+    <!-- Blog URLs with new structure -->
     <url>
         <loc>https://ssinfotechweb.com/blog</loc>
         <changefreq>daily</changefreq>

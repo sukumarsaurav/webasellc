@@ -2,11 +2,17 @@
 require_once 'config.php';
 
 try {
-    if (!isset($_GET['slug'])) {
+    // Get the slug from URL
+    $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    $segments = explode('/', trim($uri, '/'));
+    
+    // Check if we're in the blog section with a slug
+    if (count($segments) !== 2 || $segments[0] !== 'blog') {
         throw new Exception('Blog post not found');
     }
-
-    $slug = mysqli_real_escape_string($conn, $_GET['slug']);
+    
+    $slug = mysqli_real_escape_string($conn, $segments[1]);
+    
     $sql = "SELECT b.*, c.name as category_name, c.slug as category_slug 
             FROM blog b 
             LEFT JOIN blog_categories c ON b.category_id = c.id 
@@ -19,8 +25,15 @@ try {
     }
 
     $post = mysqli_fetch_assoc($result);
+    
+    // Update canonical URL to use new format
+    $canonicalUrl = "https://ssinfotechweb.com/blog/" . htmlspecialchars($post['slug']);
+    
 } catch (Exception $e) {
-    $error = $e->getMessage();
+    // Redirect to 404 page
+    header("HTTP/1.0 404 Not Found");
+    include('404.html');
+    exit();
 }
 ?>
 
@@ -53,10 +66,10 @@ try {
     <meta property="og:title" content="<?php echo htmlspecialchars($post['title']); ?> - SSInfoTech Web Blog">
     <meta property="og:description" content="<?php echo htmlspecialchars($metaDescription); ?>">
     <meta property="og:image" content="<?php echo htmlspecialchars($post['featured_image']); ?>">
-    <meta property="og:url" content="<?php echo 'https://ssinfotechweb.com/blog/' . htmlspecialchars($post['slug']); ?>">
+    <meta property="og:url" content="<?php echo $canonicalUrl; ?>">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://ssinfotechweb.com/blog/<?php echo htmlspecialchars($post['slug']); ?>" />
+    <link rel="canonical" href="<?php echo $canonicalUrl; ?>">
     
     <!-- Article Schema Markup -->
     <script type="application/ld+json">

@@ -69,5 +69,8 @@ RewriteRule ^blog/website-design-tips$ /blog-details.php?slug=website-design-tip
 RewriteRule ^blog/branding-website-design$ /blog-details.php?slug=branding-website-design [L]
 RewriteRule ^blog/website-design-trust-sales$ /blog-details.php?slug=website-design-trust-sales [L]
 
+# Blog post URL rewriting
+RewriteRule ^blog/([^/]+)/?$ blog-details.php?slug=$1 [L,QSA]
+
 # Services redirects
 RewriteRule ^services/digital-marketing$ /services/digital-marketing.html [L] 
